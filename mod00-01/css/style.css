@@ -15,13 +15,14 @@ h1,
 h2,
 .bio
 {
-	color: white;
+	font-weight: bold;
+	color: steelblue;
+	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey
 }
 
 h1 {
 	
 	font-size: 50px;
-	font-weight: normal;
 	margin-bottom: 0;
 }
 
