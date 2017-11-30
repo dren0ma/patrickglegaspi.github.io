@@ -1,0 +1,179 @@
+/*universal selector*/
+/*body * {
+	background-color: green;
+}*/
+
+/*type selector*/
+/*p {
+	background-color: yellow;
+}*/
+
+/*id selector*/
+
+/*#para1 {
+	background-color: red;
+}*/
+
+/*class selector*/
+
+/*.paragraphs {
+	background-color: orange;
+}*/
+
+/*attribute selector*/
+
+/*a[target] {
+	color: green;
+}*/
+
+/*attribute w/ value selector*/
+
+/*a[target="_blank"] {
+	color: indigo;
+}*/
+
+
+/*combinator
+adjacent sibling +
+element next to element 
+same parent
+works by pairing
+*/
+
+/*h5 + a {
+	background-color: red;
+}
+
+a + br + a {
+	background-color: green;
+}*/
+
+
+/*general sibling ~
+any element within same parent
+
+*/
+
+/*h5 ~ a {
+	background-color: yellow;
+}
+
+h5 ~ div a {
+	background-color: yellow;
+}*/
+
+/*child selector >
+any child of target
+*/
+/*
+div > a {
+	background-color: blue;
+}*/
+
+/*descendant selector whitespace
+everything inside
+*/
+/*
+div a {
+	background-color: green;
+}*/
+
+
+
+/*pseudo class
+styles for states
+*/
+
+a:link {
+	color: orange;
+	background-color: black;
+}
+
+a:visited {
+	color: yellow;
+	background-color: green;
+}
+
+a:focus {
+	color: red;
+	background-color: grey;
+}
+
+a:hover	{
+	color: green;
+	background-color: indigo;
+}
+
+/*ex. on click*/
+a:active,
+h3:active,
+h5:active {
+	color: black;
+	background-color: yellow;
+}
+
+/*order of pseudo 
+link, visited, focus-hover, active*/
+
+
+/*target is a first/last child
+of a container*/
+/*li:first-child,
+li:last-child {
+	color: yellow;
+	background-color: black;
+}
+
+p:first-child,
+p:last-child {
+	color: yellow;
+	background-color: black;
+}*/
+
+/*even odd*/
+/*
+li:nth-child(even) {
+	color: orange;
+	background-color: black;
+}
+
+p:nth-child(even) {
+	color: orange;
+	background-color: black;
+}
+
+li:nth-child(odd) {
+	color: red;
+	background-color: grey;
+}
+
+p:nth-child(odd) {
+	color: red;
+	background-color: grey;
+}*/
+
+/*grouping ,*/
+/*h3,
+h5,
+p,
+li,
+a:link {
+	color: white;
+	background-color: indigo;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
