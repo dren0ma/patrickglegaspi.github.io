@@ -1,0 +1,260 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*avoid overflow*/
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /*center wrapper*/
+	background-color: #fff;
+}
+
+/*div {
+	padding: 20px;
+}*/
+
+.grandparent {
+	background-color: skyblue;
+	position: fixed;
+	width: inherit; /*refer to wrapper container width*/
+}
+
+.parent {
+	background-color: pink;
+	position: relative;
+}
+
+/*p {*/
+	/*position: static; /*default*/*/
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/
+/*}*/
+
+input[name=submit] {
+	margin-left: 20px;
+}
+
+strong {
+	background-color: yellow;
+	position: absolute; /*"absolute-relative" will reference closest "Relative" element*/
+	/*bottom: -100px;
+	right: -100px;*/
+	top: 10px;
+	left: 10px;
+}
+
+h1 {
+	background-color: grey;
+	padding: 10px;
+	position: fixed;
+	width: inherit;
+	z-index: 1; /*layer level*/
+}
+
+main.wrapper > p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+}
+
+
+/*
+*
+* Page 3 CSS Rules
+*
+*/
+
+/*div {
+	width: 500px;
+	height: 500px;
+	border: 2px solid #000;
+	position: absolute;
+}*/
+
+.blue {
+	background-color: blue;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+}
+
+.yellow {
+	background-color: yellow;
+	top: 120px;
+	left:120px;
+	z-index: 1;
+}
+
+.green {
+	background-color: green;
+	top: 220px;
+	left: 220px;
+	z-index: 3;
+}
+
+/*
+*
+* Page 4 CSS
+*
+*/
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;	
+}
+*/
+.menu {
+	background-color: #b2d7ff;
+	height: 100px;
+}
+
+.sidebar {
+	background-color: #f09a9d;
+	height: 300px;
+	/*/height: 100%;*/
+	width: 20%;
+	float: left;	/*values: left, right, none*/
+}
+
+.content {
+	background-color: #f5c58e;
+	/*height: 500px;*/
+	width: 80%;
+	padding: 20px;
+	float: left;
+}
+
+.article-image {
+	/*height: 200px;*/
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+}
+
+.footer {
+	background-color: #d6e9fe;
+	/*height: 200px;*/
+	clear: both;	/*values: left, right, both*/
+}
+
+.avatar {
+	background-color: #d639fe;
+	background-image: url('https://www.lorempixel.com/60/60');
+	height: 60px;
+	width: 60px;
+	margin-right: 25px;
+	border-radius: 50%;
+	float: left;
+}
+
+.username {
+	margin-bottom: 15px;
+}
+
+h3.username + p {
+
+}
+
+.page {
+	/*border: 1px solid red;*/
+	/*height: 500px;*/
+}
+
+/*
+*
+* best way to clear floats
+*
+*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*
+*
+* columns
+*
+*/
+
+.column {
+	background-color: #b2d6ff;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	padding: 15px;
+	/*border: 1px solid red;*/
+	float: left;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+/*
+*
+* managing text-overflow with truncation
+*
+*/
+
+.block-with-text{
+	overflow: hidden;
+	position: relative;
+	line-height: 1.2em; /*em default font size, 16px*/
+	max-height: 4.8em;	
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text::before{
+	content:"...";
+	position: absolute;
+	right: 32px;
+	bottom: 0;
+}
+
+.block-with-text::after{
+	content: "";
+	position: absolute;
+	right: 17px;
+	height: 1em;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color:  #b2d6ff;
+
+}
+
+.read-more {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
