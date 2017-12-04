@@ -114,7 +114,8 @@ main.wrapper > p {
 
 .sidebar {
 	background-color: #8378b6;
-	height: 300px;
+	height: 500px;
+	position: relative;
 	/*/height: 100%;*/
 	width: 20%;
 	float: left;	/*values: left, right, none*/
@@ -122,7 +123,8 @@ main.wrapper > p {
 }
 
 .content {
-	background-color: rgba(156,143,176,0.5); 	/*#9c8fb0;*/
+	background-color: rgba(156,143,176,0.5); 	/*#ffd793*/
+	/*background-color: #ffd793;*/
 	/*height: 500px;*/
 	width: 80%;
 	padding: 20px;
@@ -250,6 +252,26 @@ h5 {
 	bottom: 10px;
 }
 
+.review {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.reviewbtn {
+	border: none;
+	font-size: 20px;
+	background-color: transparent;
+	color: #ffd793;
+}
+
+#userName,
+#userReview {
+	position: relative;
+	margin-top: 5px;
+	right: 5px;
+	bottom 5px;
+}
 
 a:link {
 	color: #ffd793;
