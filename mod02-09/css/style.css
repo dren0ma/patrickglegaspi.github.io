@@ -18,6 +18,7 @@ body {
 	width: 80%;
 	margin: 0 auto; /*center wrapper*/
 	background-color: #8378b6;
+	opacity: 0.9;
 }
 
 /*div {
@@ -123,8 +124,7 @@ main.wrapper > p {
 }
 
 .content {
-	background-color: rgba(156,143,176,0.5); 	/*#ffd793*/
-	/*background-color: #ffd793;*/
+	background-color: #9c8fb0;
 	/*height: 500px;*/
 	width: 80%;
 	padding: 20px;
@@ -255,7 +255,7 @@ h5 {
 .review {
 	position: absolute;
 	right: 20px;
-	bottom: 20px;
+	top: 200px;
 }
 
 .reviewbtn {
@@ -263,11 +263,11 @@ h5 {
 	font-size: 20px;
 	background-color: transparent;
 	color: #ffd793;
+
 }
 
 #userName,
 #userReview {
-	position: relative;
 	margin-top: 5px;
 	right: 5px;
 	bottom 5px;
