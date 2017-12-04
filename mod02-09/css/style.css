@@ -1,0 +1,275 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*avoid overflow*/
+}
+
+body {
+	background-color: #4f4345;
+	background: url("../img/jjbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; 
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /*center wrapper*/
+	background-color: #8378b6;
+}
+
+/*div {
+	padding: 20px;
+}*/
+
+.grandparent {
+	background-color: skyblue;
+	position: fixed;
+	width: inherit; /*refer to wrapper container width*/
+}
+
+.parent {
+	background-color: pink;
+	position: relative;
+}
+
+/*p {*/
+	/*position: static; /*default*/*/
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/
+/*}*/
+
+
+h1 {
+	background-color: grey;
+	padding: 10px;
+	position: fixed;
+	width: inherit;
+	z-index: 1; /*layer level*/
+}
+/*
+main.wrapper > p {
+	height: 1000px;
+	background-color: #8378b6;
+	position: relative;
+	top: 70px;
+}
+*/
+
+/*
+*
+* Page 3 CSS Rules
+*
+*/
+
+/*div {
+	width: 500px;
+	height: 500px;
+	border: 2px solid #000;
+	position: absolute;
+}*/
+
+.blue {
+	background-color: blue;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+}
+
+.yellow {
+	background-color: yellow;
+	top: 120px;
+	left:120px;
+	z-index: 1;
+}
+
+.green {
+	background-color: green;
+	top: 220px;
+	left: 220px;
+	z-index: 3;
+}
+
+/*
+*
+* Page 4 CSS
+*
+*/
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;	
+}
+*/
+.menu {
+	background-color: #4f4345;
+	height: 100px;
+	color: #ffd793;
+	font-size: 50px;
+	font-stretch: expanded;
+	text-align: center;
+}
+
+.sidebar {
+	background-color: #8378b6;
+	height: 300px;
+	/*/height: 100%;*/
+	width: 20%;
+	float: left;	/*values: left, right, none*/
+	color: #ffd793;
+}
+
+.content {
+	background-color: rgba(156,143,176,0.5); 	/*#9c8fb0;*/
+	/*height: 500px;*/
+	width: 80%;
+	padding: 20px;
+	float: left;
+}
+
+.article-image {
+	/*height: 200px;*/
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+}
+
+.footer {
+	background-color: #4f4345;
+	/*height: 200px;*/
+	clear: both;	/*values: left, right, both*/
+}
+
+.avatar {
+	background-color: #ffd793;
+	background-image: url('https://www.lorempixel.com/60/60');
+	height: 60px;
+	width: 60px;
+	margin-right: 25px;
+	border-radius: 50%;
+	float: left;
+}
+
+.username {
+	margin-bottom: 15px;
+}
+
+h3.username + p {
+
+}
+
+h4 {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+h5 {
+	margin-left: 50px;
+}
+
+.page {
+	/*border: 1px solid red;*/
+	/*height: 500px;*/
+}
+
+/*
+*
+* best way to clear floats
+*
+*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*
+*
+* columns
+*
+*/
+
+.column {
+	background-color: #716265;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	padding: 15px;
+	/*border: 1px solid red;*/
+	float: left;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+/*
+*
+* managing text-overflow with truncation
+*
+*/
+
+.block-with-text{
+	overflow: hidden;
+	position: relative;
+	line-height: 1.2em; /*em default font size, 16px*/
+	max-height: 4.8em;	
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text::before{
+	content:"...";
+	position: absolute;
+	right: 32px;
+	bottom: 0;
+}
+
+.block-with-text::after{
+	content: "";
+	position: absolute;
+	right: 17px;
+	height: 1em;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color:  #b2d6ff;
+
+}
+
+.read-more {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+}
+
+
+a:link {
+	color: #ffd793;
+}
+
+a:hover {
+	color: #ffd793;
+}
+
+a:visited {
+	color: #9c8fb0;
+}
+
+
+
+
+
+
+
+
+
+
+
