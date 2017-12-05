@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*   clear floats   */
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*   side navigation   */
+
+nav {
+	position: fixed;
+	width: 15%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: tan;
+}
+
+nav > a {
+	background-color: lightgrey;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+	line-height: 20px;
+	width: 150px;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px auto;
+	margin-left: 15px;
+}
+
+.logo {
+	background-color: white;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/*   wrapper   */
+.wrapper {
+	width: 85%;
+	float: right;
+	position: relative;
+}
+
+.site {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	border: 5px solid white;
+
+}
+
+.site > h1,
+.site > h4 {
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+.front {
+	background-color: wheat;
+	height: 600px;
+	position: relative;
+	color: grey;
+}
+
+
+.home,
+.about,
+.services,
+.projects,
+.gallery {
+	height: 300px;
+	font-size: 3em;
+	color: grey;
+	padding: 10px; 
+}
+
+.home {
+	background-color: lightgreen;
+}
+
+.about {
+	background-color: yellow;
+}
+
+.services {
+	background-color: lightblue;
+}
+
+.projects {
+	background-color: orange;
+}
+
+.gallery {
+	background-color: violet;
+}
+
+
+
