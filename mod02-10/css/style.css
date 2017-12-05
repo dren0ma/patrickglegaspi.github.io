@@ -1,0 +1,108 @@
+/*   CSS Reset   */
+* {					
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/*   Block Types   */
+h1,
+p {
+	background-color: lightblue;
+}
+
+/*   Inline Types   
+inline (margin/padding) - top/bottom float, left/right normal
+*/
+
+em,
+strong {
+	background-color: yellow;
+	display: inline;                     /*   default   */
+	/*display: block;*/                  /*   changes inline to block type   */
+}
+
+h1 {
+	/*padding-left: 50px;
+	padding-right: 50px;   
+	padding-top: 50px;
+	padding-bottom: 50px;*/              /*   longhand   */
+	
+	padding: 50px;                       /*   shorthand   */
+	/*padding: 10px 20px 30px 40px;*/    /*   top, right, bottom, left   */
+	/*padding: 10px 20px;*/              /*   top/bottom, left/right   */
+
+	/*border-left: 1px solid #5d6063;
+	border-right: 1px solid #5d6063;
+	border-top: 1px solid #5d6063;
+	border-bottom: 1px solid #5d6063;*/  /*   longhand   */
+	border: 1px solid #5d6063;           /*   shorthand  */
+
+}
+
+/*strong {
+	padding: 50px;
+	margin: 50px;
+}*/
+
+p {
+	padding: 20px 0 20px 10px;
+	margin-bottom: 50px;
+}
+
+
+/*   
+Div - Block
+Span - Inline 
+*/
+
+/*   Generic Boxes(div/span)   */
+
+/*   block type   */
+div {
+	background-color: skyblue;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #5d6063;
+	border-radius: 5px;
+	width: 50%;
+}
+
+/*   inline type   */
+span {
+	font-size: 2em;                      /*   1em = 16px default fontsize   */
+	color: red;
+	border: 1px solid black;
+}
+
+button {
+	padding: 20px 30px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	width: 100px;
+	margin: 0 auto;
+	display: block;                      /*   button default - inline   */
+}
+
+
+
+
+
+
+
+
+
+
