@@ -11,62 +11,35 @@
 	clear: both;
 }
 
-/*   side navigation   */
 
-nav {
-	position: fixed;
-	width: 15%;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background-color: tan;
-}
-
-nav > a {
-	background-color: lightgrey;
-	text-decoration: none;
-	text-align: center;
-	color: black;
-	font-size: 1.5em;
-	line-height: 20px;
-	width: 150px;
-	padding: 10px;
-	display: inline-block;
-	margin: 10px auto;
-	margin-left: 15px;
-}
-
-.logo {
-	background-color: white;
-	height: 150px;
-	width: 150px;
-	margin: 0 auto;
-	margin-top: 10px;
-}
 
 /*   wrapper   */
+
 .wrapper {
 	width: 85%;
+	min-width: 85%;
 	float: right;
 	position: relative;
 }
 
 .site {
-	position: relative;
-	width: 700px;
-	height: 400px;
-	margin: 0 auto;
+	width: 60%;
+	height: 50%;
+	position: absolute;
 	border: 5px solid white;
-
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	overflow: hidden;
 }
 
 .site > h1,
 .site > h4 {
-	padding: 20px;
 	text-align: center;
+	margin: 20px;
+	padding: 10px;
 }
-
-
 
 .front {
 	background-color: wheat;
@@ -74,7 +47,6 @@ nav > a {
 	position: relative;
 	color: grey;
 }
-
 
 .home,
 .about,
@@ -108,4 +80,37 @@ nav > a {
 }
 
 
+/*   sidebar   */
 
+nav {
+	position: fixed;
+	width: 15%;
+	min-width: 15%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: tan;
+	overflow: hidden;
+}
+
+nav > a {
+	background-color: lightgrey;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 1.5em;
+	width: 90%;
+	padding: 10px;
+	display: block;
+	margin: 10px auto;
+
+}
+
+.logo {
+	background-color: white;
+	height: 150px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
