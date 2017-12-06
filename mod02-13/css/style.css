@@ -12,7 +12,6 @@
 }
 
 
-
 /*   wrapper   */
 
 .wrapper {
@@ -42,41 +41,35 @@
 }
 
 .front {
-	background-color: wheat;
+	background-color: #989898;
 	height: 600px;
 	position: relative;
-	color: grey;
+	color: white;
 }
 
 .home,
 .about,
 .services,
-.projects,
+.collection,
 .gallery {
 	height: 300px;
 	font-size: 3em;
-	color: grey;
+	color: white;
 	padding: 10px; 
 }
 
-.home {
-	background-color: lightgreen;
+.home,
+.collection {
+	background-color: #8b8589;
 }
 
-.about {
-	background-color: yellow;
+.about,
+.gallery {
+	background-color: #838996;
 }
 
 .services {
-	background-color: lightblue;
-}
-
-.projects {
-	background-color: orange;
-}
-
-.gallery {
-	background-color: violet;
+	background-color: #979aaa;
 }
 
 
@@ -89,16 +82,16 @@ nav {
 	top: 0;
 	left: 0;
 	height: 100%;
-	background-color: tan;
+	background-color: #4c516d;
 	overflow: hidden;
 }
 
 nav > a {
-	background-color: lightgrey;
+	background-color: #838996;
 	position: relative;
 	text-decoration: none;
 	text-align: center;
-	color: black;
+	color: white;
 	font-size: 1.5em;
 	width: 90%;
 	padding: 10px;
@@ -113,4 +106,9 @@ nav > a {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 10px;
+}
+
+.logo > img {
+	height: 100%;
+	width: 100%;
 }
