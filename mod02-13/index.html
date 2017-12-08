@@ -1,43 +1,69 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
 	<title>Wireframe Activity 2</title>
 
+	<!--   import custom stylesheets  -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!--   import custom fonts   -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 
 <body>
 	<main>
+		<!--   main right side   -->
 		<div class="wrapper clear">
+
+			<!--   nav icon   -->
+			<div id="toggleIcon">Hide Sidebar</div>
+
+			<div id="toggleIcon1" hidden><!-- <i class="fa fa-bars" aria-hidden=""> -->Show Sidebar<!-- </i>	 -->		
+			</div>
+
 			<div class="front" id="front">
 				<div class="site">
 					<h1>Master Tsinelas</h1>
+
 					<h4>A website for our durable and reliable companion: the Tsinelas</h4>
 				</div>   <!--   .front   -->
+
+				<div class="siteback"></div>
 			</div>
-			<div class="home" id="home">Home</div>
-			<div class="about" id="about">About</div>
-			<div class="services" id="services">Services</div>
-			<div class="collection" id="collection">Collection</div>
-			<div class="gallery" id="gallery">Gallery</div>
+
+			<a href="#" class="about" id="about">About</a>
+			<a href="#" class="usefulness" id="usefulness">Usefulness</a>
+			<a href="#" class="types" id="types">Types</a>
+			<a href="#" class="collection" id="collection">Collection</a>
+			<a href="#" class="gallery" id="gallery">Gallery</a>
+
 		</div>   <!--   .wrapper   -->
 
-		<nav class="clear">
+		<!--   main side bar   -->
+		<nav>
 			<div class="logo">
 				<a href="#front"><img src="img/tsinelaslogo.png" alt="tsinelas"></a>
 			</div>
-			<a href="#home">Home</a>
+
 			<a href="#about">About</a>
-			<a href="#services">Services</a>
+			<a href="#usefulness">Usefulness</a>
+			<a href="#types">Types</a>
 			<a href="#collection">Collection</a>
 			<a href="#gallery">Gallery</a>
 		</nav>
 
 	</main>
+
+	<!--   import font awesome icons -->
+	<script src="https://use.fontawesome.com/1596618360.js"></script>
+
+	<!--   import custom javascript   -->
+	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 

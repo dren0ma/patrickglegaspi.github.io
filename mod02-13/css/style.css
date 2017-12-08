@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 /*   clear floats   */
@@ -9,6 +11,15 @@
 	content: "";
 	display: block;
 	clear: both;
+}
+
+body {
+	/*background-color: #989898;
+	background: url('../img/tsinelasimg.jpg');
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 0;*/
 }
 
 
@@ -21,6 +32,15 @@
 	position: relative;
 }
 
+.wrapper > a {
+	height: 300px;
+	padding: 10px; 
+	text-decoration: none;
+	color: white;
+	font-size: 3em;
+	display: block;
+}
+
 .site {
 	width: 60%;
 	height: 50%;
@@ -31,6 +51,21 @@
 	transform: translate(-50%, -50%);
 	padding: 50px;
 	overflow: hidden;
+	z-index: 2;
+	color: 	white;
+}
+
+.siteback {
+	width: 60%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	background-color: #979aaa;
+	opacity: 0.5;
+	z-index: 1;
 }
 
 .site > h1,
@@ -42,23 +77,15 @@
 
 .front {
 	background-color: #989898;
-	height: 600px;
+	background: url('../img/tsinelasimg.jpg');
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
 	position: relative;
-	color: white;
 }
 
-.home,
-.about,
-.services,
-.collection,
-.gallery {
-	height: 300px;
-	font-size: 3em;
-	color: white;
-	padding: 10px; 
-}
-
-.home,
+.usefulness,
 .collection {
 	background-color: #8b8589;
 }
@@ -68,20 +95,33 @@
 	background-color: #838996;
 }
 
-.services {
+.types {
 	background-color: #979aaa;
 }
 
+
+.usefulness {
+	background: url('../img/bg-uses.jpg');
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.collection {
+	background: url('../img/bg-collection.jpg');
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 /*   sidebar   */
 
 nav {
 	position: fixed;
 	width: 15%;
-	min-width: 15%;
+	/*min-width: 15%;*/
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100vh;
 	background-color: #4c516d;
 	overflow: hidden;
 }
@@ -110,4 +150,25 @@ nav > a {
 .logo > a > img {
 	height: 100%;
 	width: 100%;
+}
+
+/*  sidebar button  */
+#toggleIcon,
+#toggleIcon1 {
+	background-color: #838996;
+	position: fixed;
+	bottom: 0;
+	left: 9px;
+	padding: 10px;
+	margin-top: 2px;
+	z-index: 99999999;
+	color: white;
+	font-size: 1.3em;
+	height: 50px;
+	width: 159px;
+	text-align: center;
+}
+
+#toggleIcon1 {
+	left: 0;
 }
