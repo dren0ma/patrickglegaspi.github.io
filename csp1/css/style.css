@@ -7,11 +7,16 @@
 }
 
 /***   clear   ****/
-/*.clear:after {
+.clear:after {
 	content: "";
 	display: block;
 	clear: both;
-}*/
+}
+
+/***   adjust to nav height   ***/
+body.nav-adjust {
+	margin-top: 50px;
+} 
 
 
 /***   navbar   ***/
@@ -36,6 +41,7 @@ div#myNavbar.navbar-collapse.collapse.in > ul.nav.navbar-nav {
 div.index-divrow {
 	margin-top: 10vh;
 }
+
 
 .index-btmcontent {
 	text-align: center;
