@@ -13,6 +13,15 @@
 	clear: both;
 }
 
+
+/***   general/mobile   ***/
+
+body {
+	background: url(../img/brick.jpg);
+	background-attachment: scroll;
+	background-size: contain;
+}
+
 /***   adjust to nav height   ***/
 body.nav-adjust {
 	margin-top: 50px;
@@ -20,21 +29,18 @@ body.nav-adjust {
 
 
 /***   navbar   ***/
-/*.navbar-inverse,
+.navbar-inverse,
 button.navbar-toggle {
-	background-color: transparent;
-	background: transparent;
-	border-color: transparent;
-	border-top: transparent;
-	border-bottom: transparent;
-	border-right: transparent;
-	border-left: transparent;*/
+	opacity: 0.5;
 }
 
-div#myNavbar.navbar-collapse.collapse.in,
+/*div#myNavbar.navbar-collapse.collapse.in,
 div#myNavbar.navbar-collapse.collapse.in > ul.nav.navbar-nav {
 	background-color: blue;
-}
+}*/
+
+
+/***   carousel   ***/
 
 
 /***   landing/index css   ***/
@@ -46,10 +52,6 @@ div.index-divrow {
 .index-btmcontent {
 	text-align: center;
 }
-
-
-
-
 
 /***    menu css   ***/
 
