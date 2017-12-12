@@ -3,8 +3,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Khula', sans-serif;
+	/*font-family: 'Khula', sans-serif;*/
+	font-family: 'Trocchi', serif;
+	font-size: 20px;
+	color: #DDFFEB;
+
 }
+
+/*  site palette
+
+#8A8E91 - grey
+#B0413E - body
+
+#357266 - well 
+#0E3B43 - dark font
+#DDFFEB - font
+
+*/
 
 /***   clear   ****/
 .clear:after {
@@ -17,9 +32,10 @@
 /***   general/mobile   ***/
 
 body {
-	background: url(../img/brick.jpg);
-	background-attachment: scroll;
-	background-size: contain;
+	/*background: url(../img/bg-wood.jpg);*/
+	background-color: #B0413E;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /***   adjust to nav height   ***/
@@ -27,25 +43,29 @@ body.nav-adjust {
 	margin-top: 50px;
 } 
 
-
 /***   navbar   ***/
 .navbar-inverse,
 button.navbar-toggle {
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 }
-
-/*div#myNavbar.navbar-collapse.collapse.in,
-div#myNavbar.navbar-collapse.collapse.in > ul.nav.navbar-nav {
-	background-color: blue;
-}*/
-
 
 /***   carousel   ***/
 
+.carousel-inner > div.item {
+	overflow: hidden;
+}
+
+div.item > img.carouselimg {
+	height: 100vh;
+	width: 100vw;
+	max-width: none;
+	max-height: none;
+}
 
 /***   landing/index css   ***/
 div.index-divrow {
 	margin-top: 10vh;
+	object-fit: contain;
 }
 
 
@@ -53,14 +73,74 @@ div.index-divrow {
 	text-align: center;
 }
 
+/***   about css   ***/
+
+
+
 /***    menu css   ***/
 
-.menu-price, 
-.menu-subprice {
+.menu-img {
+	height: 10vw;
+	width: 33vw;
+	overflow: hidden;
+
+}
+
+.menu-img img {
+	background-position: center;
+	display: inline-block;
+}
+
+.menu-well {
+	background-color: #357266;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+}
+
+.menu-wellimg {
+	overflow: hidden;
+	height: 20vh;
+	border: 2px dotted #0E3B43;
+}
+
+.menu-wellimg > .img-responsive {
+	background-position: 50% 50%;
+	background-size: contain;
+}
+
+.menu-wellrow {
+	align-content: center;
+}
+
+.menu-section {
+	margin: 10px 0;
+}
+
+.menu-section > h2 {
 	text-align: center;
 }
 
-td.menu-submenu p,
-td.menu-submenu p {
-	margin-bottom: 0;
+.menu-item {
+	margin: 35px 0;
+}
+
+.menu-foodname {
+	font-weight: bold;
+	border-bottom: dotted;
+	padding: 0;
+}
+
+.menu-foodprice {
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+}
+
+.menu-description {
+	font-style: italic;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding: 0;
+	text-align: justify;
 }
