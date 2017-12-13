@@ -35,21 +35,14 @@ body {
 	background-size: cover;
 }
 
-.btn-primary {
-	color: #DDFFEB;
-	border: 2px dotted #0E3B43;
-}
+/***   buttons   ***/
 
-.dropdown {
-	padding: 2vw;
-}
-
-.btn-primary,
-.dropdown-menu,
-.open > .dropdown-toggle.btn-primary:focus,
-.open > .dropdown-toggle.btn-primary:hover {
+.btn {
 	background-color: #B0413E;
+	border: 2px dotted #0E3B43;
+	color: #DDFFEB;
 }
+
 
 /***   adjust to nav height   ***/
 body.nav-adjust {
@@ -108,12 +101,50 @@ footer {
 	background-color: #0E3B43;
 	border-top: 2px dotted #DDFFEB;
 	padding: 3vh;
-	
 }
 
 footer > p {
 	text-align: left;
 	margin-bottom: 0;
+}
+
+
+.footer-column1 {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.footer-column1 > img {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: 5vw;
+}
+.footer-column2 > a {
+	color: #DDFFEB;
+	text-decoration: none;
+	font-size: .9em;
+	display: block;
+}
+
+.footer-column3 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.footer-column3 > h3 {
+	margin-top: 0;
+}
+
+span.fa {
+	padding: 5px;
+}
+
+.disclaimer {
+	margin-top: 5vh;
+	font-size: .9em;
+	padding: 5px;
 }
 
 
@@ -268,39 +299,47 @@ footer > p {
 
 .order-well {
 	background-color: #357266;
-	margin: 0 auto;
-	padding: 10px;
 	border: 2px dotted #0E3B43;
-	margin-bottom: 10vh;
 }
 
-.order-wellrow {
-	align-content: center;
-}
-
-.order-section {
-	margin: 10px 0;
-}
-
-.order-section > h2 {
-	text-align: left;
+.order-well> h2 {
+	text-align: center;
 	font-size: 2em;
 	font-weight: bolder;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 5vh;
 }
 
-.order-section > p {
-	text-align: Left;
-	margin-bottom: 5vh;
-	margin-top: 5vh;
+.order-well label {
+	margin-top: 5px;
 }
 
-.order-ddpizza {
-	width: 10vw;
-	height: 10vh;
+.order-wellrow {
+	/*align-content: center;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.order-wellrow > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+}
+
+.order-dropdown {
 	border: 2px dotted #0E3B43;
 	background-color: #B0413E;
+}
+
+/***    modal   ***/
+.modal-header {
+	border: 2px dotted #0E3B43;
+	background-color: #B0413E;
+}
+
+.modal-body, 
+.modal-footer {
+	border: 2px dotted #0E3B43;
+	background-color: #357266;
 }
 
 
