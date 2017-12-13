@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>Picha Pie</title>
+	<title>JPL Pizza</title>
 
 	<!--    imports bootstrap    -->
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
@@ -14,62 +14,113 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 	<!--    custom fonts    -->
-	<link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway:900" rel="stylesheet">
 	
 </head>
 <body class="nav-adjust">
 
 	<!--    Navbar    -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span> 
-	      </button>
-	      <a class="navbar-brand" href="../index.html">Picha Pie</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav">
-	        <li class="active" ><a href="../index.html">Home</a></li>
-	        <li><a href="about.html">About Us</a></li>
-	        <li><a href="menu.html">Menu</a></li> 
-	        <li><a href="order.html">Order Online</a></li> 
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	      </ul>
-	    </div>
-	  </div>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="../index.html">JPL's Pizza</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active" ><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="order.html">Order Online</a></li> 
+				</ul>
+			</div>
+		</div>
 	</nav>   <!--    Navbar    -->
 
-	<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+	<div class="container-fluid">
+		<div class="row order-wellrow">
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 order-topwell well">
+				<h2>Order Online!</h2>
+			</div>  
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
+		</div> 
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+		<div class="row order-wellrow">
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>  <!-- grid spacer -->
+			<div class="col-sm-8 col-md-8 col-lg-7 well order-well">
+				<div class="order-section"> 
+					<h2>Menu</h2>
+					<!--    pizza dropdown    -->
+					<div class="dropdown">
+						<p>Pizza</p>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose your Pizza<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li>Pizza 1</li>
+							<li>Pizza 2</li>
+							<li>Pizza 3</li>
+							<li>Pizza 4</li>
+							<li>Pizza 5</li>
+							<li>Pizza 6</li>
+							<li>Pizza 7</li>
+							<li>Pizza 8</li>
+							<li>Pizza 9</li>
+						</ul>
+					</div>   <!--    pizza dropdown    -->
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+					<select name="pizza" class="order-ddpizza" id="optionpizza">
+						<option value="1">Pizza 1</option>
+						<option value="2">Pizza 2</option>
+						<option value="3">Pizza 3</option>
+						<option value="4">Pizza 4</option>
+						<option value="5" selected="">Pizza 5</option>
+						<option value="6">Pizza 6</option>
+						<option value="7">Pizza 7</option>
+						<option value="8">Pizza 8</option>
+						<option value="9">Pizza 9</option>
+					</select>
 
-  </div>
-</div>
+					<select name="pizza" class="order-ddpizza" id="optionpizza2">
+						<option value="1">Pizza 1</option>
+						<option value="2">Pizza 2</option>
+						<option value="3" selected="">Pizza 3</option>
+						<option value="4">Pizza 4</option>
+						<option value="5">Pizza 5</option>
+						<option value="6">Pizza 6</option>
+						<option value="7">Pizza 7</option>
+						<option value="8">Pizza 8</option>
+						<option value="9">Pizza 9</option>
+					</select>
+				</div>   <!--    .order-section -->
+			</div>
+				
+			<div class="col-sm-4 col-md-4 col-lg-3 well order-well">
+				<div class="order-section">
+					<h2>Total</h2>
 
-<!--   imports jQuery   -->
+					<p id="pizzaoutput">asdasdasd</p>
+				</div>   <!--    .order-section    -->
+			</div>   <!--    .order-well    -->
+		</div>   <!--    .order-wellrow    -->
+	</div>
+
+	<footer>
+		<p><small>Disclaimer:</small></p>
+		<p><small>No copyright infringement is intended. This website was created only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; full credit goes to the owner.</small></p>
+	</footer>
+
+<!-- 	<script>
+		document.getElementById("pizzaoutput").innerHTML = 5 + 6;
+
+	</script> -->
+
+	<script type="text/javascript" src="../js/script.js"></script>
+
+	<!--   imports jQuery   -->
 	<script src="../js/jquery-3.2.1.min.js"></script>
 
 	<!--    imports bootstrap javascript   -->

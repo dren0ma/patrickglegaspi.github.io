@@ -3,21 +3,18 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*font-family: 'Khula', sans-serif;*/
-	font-family: 'Trocchi', serif;
-	font-size: 20px;
+	font-family: 'Nunito Sans', sans-serif;
 	color: #DDFFEB;
-
 }
 
-/*  site palette
+/*  site palette/fonts
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Raleway', sans-serif; big font
 
-#8A8E91 - grey
-#B0413E - body
-
-#357266 - well 
-#0E3B43 - dark font
-#DDFFEB - font
+#0E3B43 - dark  footer
+#B0413E - red   body
+#357266 - teal  well 
+#DDFFEB - light font
 
 */
 
@@ -32,10 +29,26 @@
 /***   general/mobile   ***/
 
 body {
-	/*background: url(../img/bg-wood.jpg);*/
+	background: url(../img/bg-wood.jpg);
 	background-color: #B0413E;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.btn-primary {
+	color: #DDFFEB;
+	border: 2px dotted #0E3B43;
+}
+
+.dropdown {
+	padding: 2vw;
+}
+
+.btn-primary,
+.dropdown-menu,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+	background-color: #B0413E;
 }
 
 /***   adjust to nav height   ***/
@@ -45,50 +58,135 @@ body.nav-adjust {
 
 /***   navbar   ***/
 .navbar-inverse,
-button.navbar-toggle {
-	/*opacity: 0.5;*/
+.navbar-inverse .navbar-nav > .active > a {
+	background-color: #B0413E;
 }
 
+button.navbar-toggle {
+	background-color: #357266;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > li > a, 
+.navbar-inverse .navbar-header {
+	color: #DDFFEB;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #0E3B43;
+}
+
+
+
 /***   carousel   ***/
+
+div.item > img.carouselimg {
+	height: 100vh;
+	width: auto;
+	object-position: center;
+	max-width: 200%;
+	max-height: 200%;
+}
 
 .carousel-inner > div.item {
 	overflow: hidden;
 }
 
-div.item > img.carouselimg {
-	height: 100vh;
-	width: 100vw;
-	max-width: none;
-	max-height: none;
+.carousel-caption > a {
+	padding: 3vw 10vw;
+	font-size: 1em;
+	color: #DDFFEB;
 }
 
-/***   landing/index css   ***/
-div.index-divrow {
-	margin-top: 10vh;
-	object-fit: contain;
+/****   footer   ****/
+
+footer {
+	min-height: 30vh;
+	background-color: #0E3B43;
+	border-top: 2px dotted #DDFFEB;
+	
+}
+
+footer > p {
+	text-align: left;
+	margin-left: 3vw;
+	margin-right: 3vw;
 }
 
 
-.index-btmcontent {
-	text-align: center;
+/***   index/home css   ***/
+.carousel-caption > .btn-landing {
+	border-radius: 0;
+	background-color: transparent;
+	border: 1px solid #DDFFEB;
+	margin-bottom: 3vw;
 }
+
 
 /***   about css   ***/
 
+.about-well {
+	background-color: #357266;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-wellimg {
+	overflow: hidden;
+	height: 30vh;
+	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-wellrow {
+	align-content: center;
+}
+
+.about-section {
+	margin: 10px 0;
+}
+
+.about-section > h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 5vh;
+}
+
+.about-section > p {
+	text-align: center;
+	margin: 5vh 0 10vh 0;
+}
 
 
 /***    menu css   ***/
 
-.menu-img {
-	height: 10vw;
-	width: 33vw;
-	overflow: hidden;
-
+.menu-topwell {
+	background-color: #B0413E;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
 }
 
-.menu-img img {
-	background-position: center;
-	display: inline-block;
+.menu-topwell > h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
 }
 
 .menu-well {
@@ -96,17 +194,19 @@ div.index-divrow {
 	margin: 0 auto;
 	padding: 10px;
 	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
 }
 
 .menu-wellimg {
 	overflow: hidden;
 	height: 20vh;
 	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.menu-wellimg > .img-responsive {
-	background-position: 50% 50%;
-	background-size: contain;
+.menu-wellimg img {
 }
 
 .menu-wellrow {
@@ -119,6 +219,9 @@ div.index-divrow {
 
 .menu-section > h2 {
 	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
 }
 
 .menu-item {
@@ -144,3 +247,79 @@ div.index-divrow {
 	padding: 0;
 	text-align: justify;
 }
+
+
+/***   order online   ***/
+
+.order-topwell {
+	background-color: #B0413E;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+}
+
+.order-topwell > h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.order-well {
+	background-color: #357266;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
+}
+
+.order-wellrow {
+	align-content: center;
+}
+
+.order-section {
+	margin: 10px 0;
+}
+
+.order-section > h2 {
+	text-align: left;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 5vh;
+}
+
+.order-section > p {
+	text-align: Left;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+.order-ddpizza {
+	width: 10vw;
+	height: 10vh;
+	border: 2px dotted #0E3B43;
+	background-color: #B0413E;
+}
+
+
+
+/***   media queries   ***/
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+}
+
+/*** desktop ***/
+@media only screen and (min-width: 961px) {
+
+	div.item > img.carouselimg {
+		min-height: 100vh;
+		width: 100vw;
+		object-position: center;
+		max-width: none;
+		max-height: none;
+	}
+
+}
+
+

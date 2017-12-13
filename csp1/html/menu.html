@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>Picha Pie</title>
+	<title>JPL Pizza</title>
 
 	<!--    imports bootstrap    -->
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
@@ -14,47 +14,51 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 	<!--    custom fonts    -->
-	<link href="https://fonts.googleapis.com/css?family=Khula | family=Trocchi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway:900" rel="stylesheet">
 	
 </head>
 <body class="nav-adjust">
-	<!--    navbar    -->
-	<nav class="navbar navbar-inverse navbar-fixed-top ">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span> 
-	      </button>
-	      <a class="navbar-brand" href="../index.html">Picha Pie</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav">
-	        <li class="active" ><a href="../index.html">Home</a></li>
-	        <li><a href="about.html">About Us</a></li>
-	        <li><a href="menu.html">Menu</a></li> 
-	        <li><a href="order.html">Order Online</a></li> 
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>   <!--    navbar    -->
+
+	<!--    Navbar    -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="../index.html">JPL's Pizza</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active" ><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="order.html">Order Online</a></li> 
+				</ul>
+			</div>
+		</div>
+	</nav>   <!--    Navbar    -->
 
 	<!--    menu contents    -->
 	<div class="container-fluid">
 		<div class="row menu-wellrow">
-			<div class="col-sm-1 col-md-1 col-lg-1"></div>
-			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 well menu-well">
-				
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 menu-topwell well">
+				<h2>Menu</h2>
+			</div>  
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
+		</div>    <!--    .menu-topwell    -->
+
+		<div class="row menu-wellrow">
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 menu-well well">
 				<div class="menu-wellimg">
 					<img src="../img/menu-imgpizza.jpg" alt="pizza" class="img-responsive">
 				</div>
 				<div class="menu-section">
-					<h3 class="menu-section">Pizza</h2>
+					<h2 class="menu-section">Pizza</h2>
 					
 					<div class="menu-item row">
 						<div class="menu-foodname col-xs-8 col-sm-9 col-md-10 col-lg-10">Pizza Lorem Ipsum</div>
@@ -82,7 +86,7 @@
 					<img src="../img/menu-imgpasta.jpg" alt="pizza" class="img-responsive">
 				</div>
 				<div class="menu-section">
-					<h3 class="menu-section">Pasta</h2>
+					<h2 class="menu-section">Pasta</h2>
 					
 					<div class="menu-item row">
 						<div class="menu-foodname col-xs-8 col-sm-9 col-md-10 col-lg-10">Pizza Lorem Ipsum</div>
@@ -110,7 +114,7 @@
 					<img src="../img/menu-imgsalad.jpg" alt="pizza" class="img-responsive">
 				</div>
 				<div class="menu-section">
-					<h3 class="menu-section">Salads</h2>
+					<h2 class="menu-section">Salads</h2>
 					
 					<div class="menu-item row">
 						<div class="menu-foodname col-xs-8 col-sm-9 col-md-10 col-lg-10">Iced Tea</div>
@@ -138,7 +142,7 @@
 					<img src="../img/menu-imgdrinks.jpg" alt="pizza" class="img-responsive">
 				</div>
 				<div class="menu-section">
-					<h3 class="menu-section">Drinks</h2>
+					<h2 class="menu-section">Drinks</h2>
 					
 					<div class="menu-item row">
 						<div class="menu-foodname col-xs-8 col-sm-9 col-md-10 col-lg-10">Softdrinks</div>
@@ -161,17 +165,17 @@
 						<div class="menu-description col-xs-8 col-sm-9 col-md-10 col-lg-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
 					</div>
 				</div>   <!--    .menu section drinks   -->
-
-				
-
-
-
 			</div>   <!--    .menu-well    -->
-			<div class="col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>   <!-- grid spacer -->
 		</div>
 	</div>  <!--    menu contents    -->
 
-	<!--   imports jQuery   -->
+	<footer>
+		<p><small>Disclaimer:</small></p>
+		<p><small>No copyright infringement is intended. This website was created only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; full credit goes to the owner.</small></p>
+	</footer>
+
+		<!--   imports jQuery   -->
 	<script src="../js/jquery-3.2.1.min.js"></script>
 
 	<!--    imports bootstrap javascript   -->
