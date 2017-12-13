@@ -104,16 +104,16 @@ div.item > img.carouselimg {
 /****   footer   ****/
 
 footer {
-	min-height: 30vh;
+	min-height: 20vh;
 	background-color: #0E3B43;
 	border-top: 2px dotted #DDFFEB;
+	padding: 3vh;
 	
 }
 
 footer > p {
 	text-align: left;
-	margin-left: 3vw;
-	margin-right: 3vw;
+	margin-bottom: 0;
 }
 
 
