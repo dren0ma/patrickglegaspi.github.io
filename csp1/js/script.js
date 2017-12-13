@@ -1,12 +1,23 @@
+var string;
+var string2;
 var item;
 var item2;
 var total;
 
 
 var test = document.getElementById("optionpizza");
-item = test.options[test.selectedIndex].value;
+string = (test.options[test.selectedIndex].value);
 var test2 = document.getElementById("optionpizza2");
-item2 = test2.options[test2.selectedIndex].value;
+string2 = (test2.options[test2.selectedIndex].value);
+
+item = parseInt(string);
+item2 = parseInt(string2);
+
+
 total = item + item2;
 
-document.getElementById("pizzaoutput").innerHTML = total;
+document.getElementById("pizzaoutput").innerHTML = item + item2;
+
+function doThis() {
+	console.log("hello world");
+}
