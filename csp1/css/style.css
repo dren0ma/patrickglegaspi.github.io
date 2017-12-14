@@ -1,4 +1,4 @@
-/***   css  reset   ***/
+/**********   css  reset   **********/
 * {
 	margin: 0;
 	padding: 0;
@@ -18,7 +18,7 @@ font-family: 'Raleway', sans-serif; big font
 
 */
 
-/***   clear   ****/
+/**********  clear   **********/
 .clear:after {
 	content: "";
 	display: block;
@@ -26,7 +26,7 @@ font-family: 'Raleway', sans-serif; big font
 }
 
 
-/***   general/mobile   ***/
+/**********   general/mobile   **********/
 
 body {
 	background: url(../img/bg-wood.jpg);
@@ -35,7 +35,8 @@ body {
 	background-size: cover;
 }
 
-/***   buttons   ***/
+
+/**********   buttons   **********/
 
 .btn {
 	background-color: #B0413E;
@@ -44,12 +45,13 @@ body {
 }
 
 
-/***   adjust to nav height   ***/
+/**********   adjust to nav height   **********/
 body.nav-adjust {
 	margin-top: 50px;
 } 
 
-/***   navbar   ***/
+
+/**********  navbar   **********/
 .navbar-inverse,
 .navbar-inverse .navbar-nav > .active > a {
 	background-color: #B0413E;
@@ -66,7 +68,6 @@ button.navbar-toggle {
 	color: #DDFFEB;
 }
 
-
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
 	background-color: #0E3B43;
@@ -74,27 +75,7 @@ button.navbar-toggle {
 
 
 
-/***   carousel   ***/
-
-div.item > img.carouselimg {
-	height: 100vh;
-	width: auto;
-	object-position: center;
-	max-width: 200%;
-	max-height: 200%;
-}
-
-.carousel-inner > div.item {
-	overflow: hidden;
-}
-
-.carousel-caption > a {
-	padding: 3vw 10vw;
-	font-size: 1em;
-	color: #DDFFEB;
-}
-
-/****   footer   ****/
+/**********  footer   **********/
 
 footer {
 	min-height: 20vh;
@@ -107,7 +88,6 @@ footer > p {
 	text-align: left;
 	margin-bottom: 0;
 }
-
 
 .footer-column1 {
 	display: flex;
@@ -142,13 +122,27 @@ span.fa {
 }
 
 .disclaimer {
-	margin-top: 5vh;
-	font-size: .9em;
-	padding: 5px;
+	
 }
 
 
-/***   index/home css   ***/
+/**********   index css   **********/
+
+.item > img.index-carouselimg {
+	height: 100vh;
+	width: auto;
+	object-position: center;
+	max-width: 200%;
+	max-height: 200%;
+}
+
+
+.carousel-caption > a {
+	padding: 3vw 10vw;
+	font-size: 1em;
+	color: #DDFFEB;
+}
+
 .carousel-caption > .btn-landing {
 	border-radius: 0;
 	background-color: transparent;
@@ -156,16 +150,68 @@ span.fa {
 	margin-bottom: 3vw;
 }
 
+/**********   home css   **********/
 
-/***   about css   ***/
-
-.about-well {
-	background-color: #357266;
+.home-topwell {
+	background-color: #B0413E;
 	margin: 0 auto;
 	margin-top: 10vh;
 	padding: 10px;
 	border: 2px dotted #0E3B43;
+}
+
+.home-topwell > h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.home-well {
+	background-color: #357266;
+	border: 2px dotted #0E3B43;
+	text-align: center;
+	margin: 0 auto;
 	margin-bottom: 10vh;
+	padding: 10px;
+}
+
+.home-wellimg {
+	overflow: hidden;
+	height: 30vh;
+	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-wellrow {
+	align-content: center;
+}
+
+.home-section {
+	margin-top: 10px;
+}
+
+.home-section > p {
+	padding: 1vh;
+	margin-bottom: 0;
+}
+
+.carousel-inner > .home-item {
+	overflow: hidden;
+	height: 50vh;
+}
+
+
+/**********   about css   **********/
+
+.about-well {
+	background-color: #357266;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -186,7 +232,7 @@ span.fa {
 }
 
 .about-section {
-	margin: 10px 0;
+	margin-top: 10px;
 }
 
 .about-section > h2 {
@@ -199,11 +245,11 @@ span.fa {
 
 .about-section > p {
 	text-align: center;
-	margin: 5vh 0 10vh 0;
+	margin: 3vh 0 10vh 0;
 }
 
 
-/***    menu css   ***/
+/**********    menu css   **********/
 
 .menu-topwell {
 	background-color: #B0413E;
@@ -256,7 +302,7 @@ span.fa {
 }
 
 .menu-item {
-	margin: 35px 0;
+	margin: 10px 0;
 }
 
 .menu-foodname {
@@ -280,7 +326,7 @@ span.fa {
 }
 
 
-/***   order online   ***/
+/**********   order online css   **********/
 
 .order-topwell {
 	background-color: #B0413E;
@@ -300,6 +346,7 @@ span.fa {
 .order-well {
 	background-color: #357266;
 	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
 }
 
 .order-well> h2 {
@@ -344,21 +391,17 @@ span.fa {
 
 
 
-/***   media queries   ***/
+/**********   media queries   **********/
 @media only screen and (min-width: 481px) and (max-width: 960px) {
 }
 
 /*** desktop ***/
 @media only screen and (min-width: 961px) {
 
-	div.item > img.carouselimg {
-		min-height: 100vh;
-		width: 100vw;
-		object-position: center;
-		max-width: none;
-		max-height: none;
-	}
 
 }
+}
+
+
 
 
