@@ -49,79 +49,87 @@
 		</div> 
 
 		<div class="row order-wellrow">
-			<div class="col-sm-1 col-md-8 col-lg-1"></div>
-			<div class="col-xs-12 col-sm-6 col-md-8 col-lg-6 well order-well">
+			<div class="col-sm-1 col-md-1"></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 well order-well">
 				<h2>Menu</h2>
 				<!--    pizza dropdown    -->
 				<label for="pizzaOrder">Choose Your Pizza:</label>
-				<select name="pizzaOrder" class="order-dropdown" id="optionpizza" onchange="">
-					<option value="0" selected>Select Pizza:</option>
-					<option value="500">Neapolitan</option>
-					<option value="550">Greek</option>
-					<option value="600">Mushroom Truffle</option>
-					<option value="500">Eggplant Parmesan</option>
-					<option value="525">Hawaiian</option>
-					<option value="575">Sicilian Pepperoni</option>
-					<option value="500">Pepperoni</option>
-					<option value="575">Manhattan</option>
-					<option value="550">Pesto Chicken</option>
-					<option value="600">Philly Cheese Steak</option>
-					<option value="525">All Meat</option>
-					<option value="600">Roasted Garlic</option>
-					<option value="600">Monaco</option>
-					<option value="575">Cheese Puddle</option>
+				<select name="pizzaOrder" class="order-dropdown" id="optionpizza" onchange="totalItems()">
+					<option value="0" id="14" selected>Select Pizza:</option>
+					<option value="500" id="0">Neapolitan</option>
+					<option value="550" id="1">Greek</option>
+					<option value="600" id="2">Mushroom Truffle</option>
+					<option value="500" id="3">Eggplant Parmesan</option>
+					<option value="525" id="4">Hawaiian</option>
+					<option value="575" id="5">Sicilian Pepperoni</option>
+					<option value="500" id="6">Pepperoni</option>
+					<option value="575" id="7">Manhattan</option>
+					<option value="550" id="8">Pesto Chicken</option>
+					<option value="600" id="9">Philly Cheese Steak</option>
+					<option value="525" id="10">All Meat</option>
+					<option value="600" id="11">Roasted Garlic</option>
+					<option value="600" id="12">Monaco</option>
+					<option value="575" id="13">Cheese Puddle</option>
 				</select>
 
 				<!--    pasta dropdown    -->
 				<label for="pastaOrder">Choose Your Pasta</label>
-				<select name="pastaOrder" class="order-dropdown" id="optionpasta" onchange="">
-					<option value="0" selected>Select Pasta:</option>
-					<option value="250">Pomodoro</option>
-					<option value="225">Pesto</option>
-					<option value="250">Carbonara</option>
-					<option value="250">Spaghetti and Meatballs</option>
-					<option value="300">Spaghetti Bolognese</option>
-					<option value="275">Fettucine Puttanesca</option>
-					<option value="300">Boscaiola</option>
-					<option value="275">Romana</option>
-					<option value="250">Stella</option>
-					<option value="225">Spinach</option>
-					<option value="250">Spirali Calabrese</option>
-					<option value="325">Positano</option>
+				<select name="pastaOrder" class="order-dropdown" id="optionpasta" onchange="totalItems()">
+					<option value="0" id="12" selected>Select Pasta:</option>
+					<option value="250" id="0">Pomodoro</option>
+					<option value="225" id="1">Pesto</option>
+					<option value="250" id="2">Carbonara</option>
+					<option value="250" id="3">Spaghetti and Meatballs</option>
+					<option value="300" id="4">Spaghetti Bolognese</option>
+					<option value="275" id="5">Fettucine Puttanesca</option>
+					<option value="300" id="6">Boscaiola</option>
+					<option value="275" id="7">Romana</option>
+					<option value="250" id="8">Stella</option>
+					<option value="225" id="9">Spinach</option>
+					<option value="250" id="10">Spirali Calabrese</option>
+					<option value="325" id="11">Positano</option>
 				</select>
 
 				<!--    salad dropdown    -->
 				<label for="saladOrder">Choose Your Salad:</label>
-				<select name="saladOrder" class="order-dropdown" id="optionsalad" onchange="">
-					<option value="0" selected>Select Salad:</option>
-					<option value="100">Caesar</option>
-					<option value="125">Greek</option>
-					<option value="100">Garden</option>
-					<option value="125">Chop Chop</option>
-					<option value="150">Italian Salami</option>
-					<option value="100">Navona</option>
-					<option value="125">Chicken</option>
-					<option value="150">Avocado and Asparagus</option>
-					<option value="175">Ravioli</option>
-					<option value="125">Green</option>
-					<option value="175">Mean Green</option>
+				<select name="saladOrder" class="order-dropdown" id="optionsalad" onchange="totalItems()">
+					<option value="0" id="11" selected>Select Salad:</option>
+					<option value="100" id="0">Caesar</option>
+					<option value="125" id="1">Greek</option>
+					<option value="100" id="2">Garden</option>
+					<option value="125" id="3">Chop Chop</option>
+					<option value="150" id="4">Italian Salami</option>
+					<option value="100" id="5">Navona</option>
+					<option value="125" id="6">Chicken</option>
+					<option value="150" id="7">Avocado and Asparagus</option>
+					<option value="175" id="8">Ravioli</option>
+					<option value="125" id="9">Green</option>
+					<option value="175" id="10">Mean Green</option>
 				</select>
 
 				<!--    drinks dropdown    -->
 				<label for="drinksOrder">Choose Your Drinks:</label>
-				<select name="drinksOrder" class="order-dropdown" id="optionpizza" onchange="">
-					<option value="0" selected>Select Drinks:</option>
-					<option value="40">Beer</option>
-					<option value="40">Iced Tea</option>
-					<option value="40">Lemonade</option>
-					<option value="30">Bottled Water</option>
-					<option value="40">Softdrinks</option>
-					<option value="75">Milkshake</option>
+				<select name="drinksOrder" class="order-dropdown" id="optiondrinks" onchange="totalItems()">
+					<option value="0" id="6" selected>Select Drinks:</option>
+					<option value="40" id="0">Beer</option>
+					<option value="40" id="1">Iced Tea</option>
+					<option value="40" id="2">Lemonade</option>
+					<option value="30" id="3">Bottled Water</option>
+					<option value="40" id="4">Softdrinks</option>
+					<option value="75" id="5">Milkshake</option>
 				</select>
 			</div>
 				
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 well order-well">
 				<h2>Total</h2>
+
+				<p id="order-item0">Pizza: </p>
+				<p id="order-item1">Pasta: </p>
+				<p id="order-item2">Salad: </p>
+				<p id="order-item3">Drinks: </p>
+				<p id="order-total">Total Price: </p>
+
+
 				<!-- Trigger the modal with a button -->
 				<button type="button" class="btn btn-xs" data-toggle="modal" data-target="#myModal">Checkout</button>
 
