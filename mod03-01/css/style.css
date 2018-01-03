@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-style: box;
+}
+
+
+
+h1	{
+	width: 50vw;
+	height: 50px;
+	margin: 10px auto;
+	text-align: center;
+	color: lightgrey;
+}
+
+h2 {
+	font-size: 3.5em;
+	text-align: right;
+}
+
+h5 {
+	font-size: 1.2em;
+	color: grey;
+	text-align: right;
+}
+
+
+.calc {
+	width: 55vw;
+	border: 2px black solid;
+	margin: 0 auto;
+	margin-top: 5vh;
+	background: grey;
+}
+
+.key {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border-right: 2px grey solid;
+	border-bottom: 2px grey solid;
+	font-size: 2em;
+	background: linear-gradient(darkgrey, lightgrey);
+}
+
+
+.display {
+	width: 50vw;
+	height: 90px;
+	border: 2px grey solid;
+	border-top: 2px darkgrey solid;
+	border-left: 2px darkgrey solid;
+	margin: 10px auto;
+	background: lightgrey;
+}
+
+.ui {
+	width: 50vw;
+	border: 2px grey solid;
+	margin: 20px auto;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample JS</title>
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+<div class="calc">
+	<h1 id="head">Magic Calculator!</h1>
+	<div class="display">
+		<h5 id="line"></h5>
+		<h2 id="heading"></h2>
+
+	</div>
+
+	<!-- <button onclick="alert('Hello World!')">Click Me!</button> -->
+
+	<!--  -->
+	
+	<!-- <button id="btn">Click Me!</button> -->
+
+	<!--  -->
+
+	<!-- <script type="text/javascript">
+			alert('Hello World!');
+	</script> -->
+
+	<!--  -->
+
+	<!-- <script type="text/javascript">
+		document.getElementById("heading").innerHTML = "javascript";
+	</script> -->
+
+	<!--  -->
+
+	<!-- <button id="btn" onclick="document.getElementById('heading').innerHTML = 'javascript'">Click Me!</button> -->
+
+	<!--  -->
+
+	<!-- <button id="btn" onclick="document.getElementById('heading').innerHTML = 'javascript'">Click Me!</button>
+
+	<button id="btn" onclick="changeHTML()">Click Me!</button>
+
+	<script type="text/javascript">
+		function changeHTML(){
+			document.getElementById('heading').innerHTML = 'javascript function';
+		}
+	</script> -->
+
+	<!-- <input type="number" id="num1">
+
+	<input type="number" id="num2"> -->
+	<div class=ui>
+		<button class="key" onclick="display(this.innerHTML)">7</button>
+		<button class="key" onclick="display(this.innerHTML)">8</button>
+		<button class="key" onclick="display(this.innerHTML)">9</button>
+		<button class="key" onclick="operation(this.innerHTML)">/</button>
+		<select id="month" onchange="month()">
+			<option id="January">January</option>
+			<option id="February">February</option>
+			<option id="March">March</option>
+			<option id="April">April</option>
+			<option id="May">May</option>
+			<option id="June">June</option>
+			<option id="July">July</option>
+			<option id="August">August</option>
+			<option id="September">September</option>
+			<option id="October">October</option>
+			<option id="November">November</option>
+			<option id="December">December</option>
+		</select><br>
+		<button class="key" onclick="display(this.innerHTML)">4</button>
+		<button class="key" onclick="display(this.innerHTML)">5</button>
+		<button class="key" onclick="display(this.innerHTML)">6</button>
+		<button class="key" onclick="operation(this.innerHTML)">*</button><br>
+		<button class="key" onclick="display(this.innerHTML)">1</button>
+		<button class="key" onclick="display(this.innerHTML)">2</button>
+		<button class="key" onclick="display(this.innerHTML)">3</button>
+		<button class="key" onclick="operation(this.innerHTML)">-</button>
+		<button class="key" onclick="oddeven()">O/E</button><br>
+		<button class="key" onclick="display(this.innerHTML)">0</button>
+		<button class="key" onclick="decimal(this.innerHTML)">.</button>
+		<button class="key" onclick="ans(this.innerHTML)">=</button>
+		<button class="key" onclick="operation(this.innerHTML)">+</button>
+		<button class="key" onclick="erase()">C</button>
+	</div>
+</div>
+	<script type="text/javascript" src="js/sample.js"></script>
+
+
+</body>
+
+</html>
