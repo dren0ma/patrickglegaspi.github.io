@@ -66,7 +66,7 @@ function operation(val) {
 
 function oddeven(){
 	var num = document.getElementById("heading").innerHTML;
-	if ((num % 2 != 0)){
+	if ((num % 2 != 0)) {
 		document.getElementById("head").innerHTML = "Odd Number!"
 		document.getElementById("head").style.color = "red";
 	}
@@ -82,7 +82,6 @@ function month() {
 	mos = mos2.options[mos2.selectedIndex].id;
 	document.getElementById("head").innerHTML = mos;
 	document.getElementById("head").style.color = "green";
-
 }
 
 
