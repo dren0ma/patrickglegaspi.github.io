@@ -7,18 +7,36 @@
 
 	<title>Sample JS 2</title>
 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+	<div class="asdf">
+		<h2 id="head">Check Number</h2>
+		<input type="text" id="inputBox">
+		<button id="" onclick="checkNum()">Check Number</button>
 
-	<h2 id="head">Check Number</h1>
-	<input type="text" id="inputBox"><br>
-	<button id="" onclick="checkNum()">Check Number</button>
+		<h2 id="headbmi">BMI Classification</h2>
+		<div>
+			<label><input type="text" id="inputWeight">Weight</label>
+			<select id="weight">
+				<option id="lbs">lb</option>
+				<option id="kgs">kg</option>
+			</select>
 
-	<h2 id="headbmi">BMI Classification</h1>
-	<label><input type="text" id="inputWeight">Input weight in lbs</label><br>
-	<label><input type="text" id="inputHeight">Input height in feet</label><br>
-	<button id="" onclick="checkWeight()">Check BMI</button>
+			<label><input type="text" id="inputHeight">Height</label>
+			<select id="height">
+				<option id="feet">ft</option>
+				<option id="meter">m</option>
+			</select>
+		</div>
+		
+		<button id="" onclick="checkWeight()">Check BMI</button>
+
+		<input type="text" id="loop">
+		<p id="asterisk"></p>
+		<button id="" onclick="goLoop()">Loop</button>
+	</div>
 
 
 	<script type="text/javascript" src="js/script.js"></script>

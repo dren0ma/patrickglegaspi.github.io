@@ -1,4 +1,45 @@
 * {
 	margin: 0;
-	paddng: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+.asdf {
+	height: 100vh;
+	width: 30vw;
+	border: 2px white groove;
+	padding: 10px;
+	background-color: #4b535c;
+	color: white;
+}
+
+h2 {
+	margin-top: 20px;
+	color: #B3CBB9;
+	font-size: 1.5em;
+}
+
+button {
+	width: 20vw;
+	padding: 3px;
+	margin-top: 5px;
+	background-color: #84A9C0;
+	border: 2px white groove;
+	color: white;
+}
+
+label {
+	width: 20px;
+}
+
+#inputBox, #inputWeight, #inputHeight, #loop {
+	width: 10vw;
+	padding: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#weight, #height {
+	width: 40px;
+}
+
