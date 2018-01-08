@@ -161,19 +161,26 @@
 	?>
 
 	<?php
-	include "functionslib.php";
+	// include "functionslib.php";  	//include = site still runs without the file
+
+	require "functionslib.php";			//require = required file is needed to run site
 	print_table(5, 5);
 
 	sum_this(10);
 
 	echo fact_this(1);
+	echo "<br>";
 	echo fact_this(2);
-	fact_this(3);
-	fact_this(4);
-	fact_this(5);
+	echo "<br>";
+	echo fact_this(3);
+	echo "<br>";
+	echo fact_this(4);
+	echo "<br>";
+	echo fact_this(5);
+	echo "<br>";
 
 
-	global $varname;
+	global $varname;					//global declaration
 
 	
 
