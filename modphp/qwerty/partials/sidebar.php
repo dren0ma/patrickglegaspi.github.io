@@ -20,4 +20,6 @@
 		<button type="submit" class="btn btn-default" id=btnregister>Register</button>
 	</form>
 	<?php endif; ?>
+
+	
 </div>

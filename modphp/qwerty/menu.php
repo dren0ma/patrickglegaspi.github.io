@@ -22,7 +22,7 @@ function display_content(){
 	echo "<form><select name='category'><option>All</option>";
 	foreach ($categories as $category) {
 		if ($filter == $category) {
-			echo "<option selected>$category</option>";	
+			echo "<option selected>$category</option>";
 		}
 		else {
 			echo "<option>$category</option>";
