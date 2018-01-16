@@ -5,7 +5,15 @@ $string = file_get_contents("assets/items.json");
 $items = json_decode($string, true);
 
 //delete task from array $items
-array_splice($items, $index, 1);
+
+// $updated_items = array_splice($items, $index, 1);  
+
+//assign to a new variable if 'by reference'
+
+//array_splice($items, $index, 1); last resort
+
+unset($items[$index]);
+
 
 //update json file
 $file = fopen('assets/items.json', 'w');

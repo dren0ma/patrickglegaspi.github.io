@@ -1,5 +1,12 @@
 [
     {
+        "name": "Neapolitan",
+        "description": "Mozzarella, tomatoes, basil leaves, oregano, olive oil",
+        "price": "500",
+        "img": "img\/pizza.jpg",
+        "category": "Pizza"
+    },
+    {
         "name": "Pepperoni",
         "description": "Mozzarella, provolone, onions, pepperoncini",
         "price": "500",
@@ -14,9 +21,16 @@
         "category": "Pasta"
     },
     {
+        "name": "Pomodoro",
+        "description": "Classic tomato sauce, basil, parmesan",
+        "price": "250",
+        "img": "img\/pasta.jpg",
+        "category": "Pasta"
+    },
+    {
         "name": "Mushroom Truffle",
         "description": "Mushroom, basil, truffle oil fontinella, goat cheese, mozzarella, parmigiano",
-        "price": "600",
+        "price": "1",
         "img": "img\/pizza3.jpg",
         "category": "Pizza"
     },
