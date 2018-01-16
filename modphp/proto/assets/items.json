@@ -1,5 +1,12 @@
 [
     {
+        "name": "Neapolitan",
+        "description": "Mozzarella, tomatoes, basil leaves, oregano, olive oil",
+        "price": "500",
+        "img": "img\/pizza.jpg",
+        "category": "Pizza"
+    },
+    {
         "name": "Pepperoni",
         "description": "Mozzarella, provolone, onions, pepperoncini",
         "price": "500",
@@ -10,6 +17,13 @@
         "name": "Spaghetti Bolognese",
         "description": "Slow braised beef and tomato",
         "price": "300",
+        "img": "img\/pasta.jpg",
+        "category": "Pasta"
+    },
+    {
+        "name": "Pomodoro",
+        "description": "Classic tomato sauce, basil, parmesan",
+        "price": "250",
         "img": "img\/pasta.jpg",
         "category": "Pasta"
     },

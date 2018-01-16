@@ -33,3 +33,9 @@ div[class="item_display"] {
 h5 {
 		font-weight: bold;
 }
+
+
+.imgedit {
+	height: 150px;
+	width: 150px;
+}

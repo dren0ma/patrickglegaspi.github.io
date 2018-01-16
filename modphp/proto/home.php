@@ -4,7 +4,20 @@ function display_title (){
 }
 
 function display_content(){
-	echo "Home Page";
+
+require "nav.php"; 
+?>
+<section class="hero is-warning is-bold is-fullheight">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">Tuitt</h1>
+		</div>
+	</div>
+</section>
+
+
+
+<?php	
 }
 
 require "template.php";
